@@ -1,0 +1,47 @@
+.svg-background-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Sesuaikan tinggi */
+    overflow: hidden;
+}
+
+.image-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/images/foto-2.jpg') no-repeat center center;
+    background-size: cover; /* Agar gambar memenuhi seluruh container */
+    z-index: 1; /* Lapisan gambar berada di bawah SVG */
+}
+
+.svg-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* Otomatis menyesuaikan lebar */
+    z-index: 2; /* Lapisan SVG berada di atas gambar */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    z-index: 3; /* Lapisan konten berada di atas SVG */
+    text-align: center;
+}
+
+
+.content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 1rem;
+    margin-top: 10px;
+}

@@ -1,0 +1,97 @@
+/* Warna pastel utama */
+body {
+    background-color: #ffeef2; /* Pink pastel lembut */
+    font-family: 'Arial', sans-serif; /* Font clean dan modern */
+}
+
+#wishContainer {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+/* Warna pastel untuk kotak ucapan */
+.pastel-bg {
+    background-color: #ffe4e9; /* Pink pastel */
+}
+
+/* Warna teks pengirim */
+.pastel-text {
+    color: #d26472; /* Pink tua pastel */
+}
+
+/* Class untuk nama pengirim */
+.wish-sender {
+    font-family: 'Garamond', serif; /* Font elegan untuk nama pengirim */
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #d26472; /* Warna pink tua untuk nama pengirim */
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Class untuk ucapan */
+.wish-text {
+    color: #333; /* Warna gelap agar teks mudah dibaca */
+    font-size: 1.1rem;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+/* Bubble */
+.bubble {
+    position: absolute;
+    background-color: rgba(255, 192, 203, 0.6); /* Pink pastel transparan */
+    border-radius: 50%;
+    animation: float 10s infinite ease-in-out, drift 5s infinite alternate ease-in-out;
+    z-index: 0; /* Di bawah konten */
+    opacity: 0; /* Mulai dengan opacity 0 untuk fade-in */
+    transition: opacity 1s ease-in-out; /* Transisi opacity */
+}
+
+/* Bubble dengan ukuran berbeda */
+.bubble-1 {
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+
+.bubble-2 {
+    width: 50px;
+    height: 50px;
+    animation-delay: 2s;
+}
+
+.bubble-3 {
+    width: 30px;
+    height: 30px;
+    animation-delay: 4s;
+}
+
+/* Animasi melayang naik-turun */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Animasi drift (bergerak horizontal) */
+@keyframes drift {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}

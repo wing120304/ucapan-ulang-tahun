@@ -1,0 +1,129 @@
+/* Khusus untuk Wedding Date Section */
+#wedding-date {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 20px;
+    min-height: 100vh;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#wedding-date video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#wedding-date {
+    position: relative;
+    background: url('./assets/fallback-image.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+#wedding-date h2 {
+    font-family: 'Esthetic', sans-serif;
+    color: #e91e63; /* Pink Dark */
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+#wedding-date .countdown-container {
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    background-color: #fff;
+}
+
+#wedding-date .countdown-container h3 {
+    font-family: 'Esthetic', sans-serif;
+    color: #e91e63;
+    font-size: 1.8rem;
+}
+
+#wedding-date .countdown-container .time-box {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#wedding-date .countdown-container .time-box h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #e91e63;
+}
+
+#wedding-date .countdown-container .time-box small {
+    color: #f48fb1; /* Light Pink */
+}
+
+#wedding-date .btn {
+    background-color: #ffe5ec;
+    color: #e91e63;
+    font-size: 1rem;
+    border: 1px solid #f2a6b3;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}
+
+.countdown-container {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.countdown-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.time-circle {
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-circle h2 {
+    font-size: 3rem;
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.time-circle small {
+    font-size: 1rem;
+    color: #ffffffb3;
+}
+
+@media (max-width: 768px) {
+    .time-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .time-circle h2 {
+        font-size: 2rem;
+    }
+
+    .time-circle small {
+        font-size: 0.9rem;
+    }
+}

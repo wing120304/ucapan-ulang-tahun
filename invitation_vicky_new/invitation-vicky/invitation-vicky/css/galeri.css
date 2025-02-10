@@ -1,0 +1,84 @@
+/* Fantasy Gallery Styling */
+.fantasy-gallery {
+    margin-bottom: 4rem; /* Jarak di bawah galeri */
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 1200px;
+    backdrop-filter: blur(8px);
+}
+
+.gallery-title {
+    font-size: 2.8rem;
+    color: #ffd1dc;
+    background: linear-gradient(90deg, #FFB6C1, #FF69B4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 2rem;
+}
+
+/* Button Styling */
+.categories {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.category-btn {
+    background: #ff5c8d;
+    border: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.category-btn:hover {
+    background: #ff8fc2;
+    transform: scale(1.05);
+}
+
+/* Media Section */
+.media-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease;
+}
+
+.media-section.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.media-image,
+.media-video {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.media-image:hover,
+.media-video:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-title {
+        font-size: 2.5rem;
+    }
+
+    .category-btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
